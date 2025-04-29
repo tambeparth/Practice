@@ -3,7 +3,8 @@ using namespace std;
 vector<int> majorityElement(vector<int> &arr)
 {
     int n = arr.size();
-    int cnt1, cnt2 = 0;
+    int cnt1 = 0;
+    int cnt2 = 0;
     int ele1 = INT_MIN;
     int ele2 = INT_MIN;
 
