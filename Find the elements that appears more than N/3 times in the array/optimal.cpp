@@ -1,3 +1,5 @@
+// Boyer's Moore Majority Voting Algorithm
+
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> majorityElement(vector<int> &arr)
@@ -56,7 +58,7 @@ vector<int> majorityElement(vector<int> &arr)
 
 int main()
 {
-    vector<int> arr = {11, 33, 33, 11, 33, 11};
+    vector<int> arr = {2, 1, 1, 3, 1, 4, 5, 6};
     vector<int> ans = majorityElement(arr);
     for (auto it : ans)
     {
