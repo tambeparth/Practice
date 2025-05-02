@@ -35,6 +35,6 @@ bool searchMat(vector<vector<int>> &mat, int target)
 int main()
 {
     vector<vector<int>> mat = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-    searchMat(mat, 8) == true ? cout << "true\n" : cout << "false\n";
+    searchMat(mat, 10) == true ? cout << "true\n" : cout << "false\n";
     return 0;
 }
