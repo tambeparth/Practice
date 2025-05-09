@@ -42,7 +42,7 @@ vector<vector<int>> fourSum(vector<int> &nums, int target)
 
 int main()
 {
-    vector<int> nums = {4, 3, 3, 4, 4, 2, 1, 2, 1, 1};
+    vector<int> nums = {4, 3, 3, 4, 4, 2, 1, 2, 1, 1, 1};
     int target = 9;
 
     vector<vector<int>> ans = fourSum(nums, target);
