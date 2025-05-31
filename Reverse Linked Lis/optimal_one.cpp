@@ -43,18 +43,11 @@ Node *reverseLinkedList(Node *head)
         // 'front' to preserve the reference
         Node *front = temp->next;
 
-        // Reverse the direction of the
-        // current node's 'next' pointer
-        // to point to 'prev'
         temp->next = prev;
 
-        // Move 'prev' to the current
-        // node for the next iteration
         prev = temp;
 
-        // Move 'temp' to the 'front' node
-        // advancing the traversal
-        temp = front;
+                temp = front;
     }
 
     return prev;
