@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <bits/stdc++.h>
 
@@ -47,12 +45,11 @@ Node *reverseLinkedList(Node *head)
 
         prev = temp;
 
-                temp = front;
+        temp = front;
     }
 
     return prev;
 }
-
 void printLinkedList(Node *head)
 {
     Node *temp = head;
