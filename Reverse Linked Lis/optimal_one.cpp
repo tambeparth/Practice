@@ -21,8 +21,6 @@ public:
     }
 };
 
-// Function to reverse a linked list
-// using the 3-pointer approach
 Node *reverseLinkedList(Node *head)
 {
     // Initialize'temp' at
