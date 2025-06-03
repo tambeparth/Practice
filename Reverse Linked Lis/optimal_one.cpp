@@ -23,12 +23,9 @@ public:
 
 Node *reverseLinkedList(Node *head)
 {
-    // Initialize'temp' at
-    // head of linked list
+
     Node *temp = head;
 
-    // Initialize pointer 'prev' to NULL,
-    // representing the previous node
     Node *prev = NULL;
 
     // Traverse the list, continue till
