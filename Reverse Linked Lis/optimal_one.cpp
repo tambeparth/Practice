@@ -28,12 +28,9 @@ Node *reverseLinkedList(Node *head)
 
     Node *prev = NULL;
 
-    // Traverse the list, continue till
-    // 'temp' reaches the end (NULL)
     while (temp != NULL)
     {
-        // Store the next node in
-        // 'front' to preserve the reference
+
         Node *front = temp->next;
 
         temp->next = prev;
