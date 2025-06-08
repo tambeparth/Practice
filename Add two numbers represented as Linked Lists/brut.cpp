@@ -22,7 +22,6 @@ public:
     }
 };
 
-// Function to add two numbers represented by linked lists
 Node *addTwoNumbers(Node *l1, Node *l2)
 {
     Node *dummy = new Node(0);
@@ -55,7 +54,6 @@ Node *addTwoNumbers(Node *l1, Node *l2)
     return dummy->next;
 }
 
-// Helper to create linked list from vector
 Node *createList(const vector<int> &digits)
 {
     if (digits.empty())
@@ -73,7 +71,6 @@ Node *createList(const vector<int> &digits)
     return head;
 }
 
-// Helper to print the linked list
 void printList(Node *head)
 {
     while (head != nullptr)
@@ -89,7 +86,7 @@ void printList(Node *head)
 // Driver code
 int main()
 {
-    // Representing 342 and 465
+
     vector<int> num1 = {2, 4, 3}; // 342
     vector<int> num2 = {5, 6, 4}; // 465
 
