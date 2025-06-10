@@ -2,7 +2,6 @@
 #include <vector>
 
 using namespace std;
-
 class Node
 {
 public:
@@ -86,8 +85,8 @@ void printList(Node *head)
 int main()
 {
 
-    vector<int> num1 = {2, 4, 3}; // 342
-    vector<int> num2 = {5, 6, 4}; // 465
+    vector<int> num1 = {2, 4, 3};
+    vector<int> num2 = {5, 6, 4};
 
     Node *l1 = createList(num1);
     Node *l2 = createList(num2);
