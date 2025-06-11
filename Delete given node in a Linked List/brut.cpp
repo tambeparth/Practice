@@ -1,17 +1,18 @@
 #include <iostream>
 using namespace std;
-
 class node
 {
 public:
     int num;
     node *next;
+
     node(int a)
     {
         num = a;
         next = NULL;
     }
 };
+
 // function to insert node at the end of the list
 void insertNode(node *&head, int val)
 {
@@ -37,8 +38,9 @@ node *getNode(node *head, int val)
 // delete function as per the question
 void deleteNode(node *t)
 {
-    t->num = t->next->num;
-    t->next = t->next->next;
+    t->num = t->next->num;   // Copy next node's data
+    t->next = t->next->next; // Skip next node
+
     return;
 }
 // printing the list function
