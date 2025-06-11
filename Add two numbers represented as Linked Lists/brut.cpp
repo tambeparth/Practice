@@ -2,22 +2,17 @@
 #include <vector>
 
 using namespace std;
-
-// Node structure representing a single digit in the linked list
 class Node
 {
 public:
-    int data;   // holds the digit
-    Node *next; // pointer to the next node
+    int data;
+    Node *next;
 
-    // Constructor with both data and next pointer
     Node(int data1, Node *next1)
     {
         data = data1;
         next = next1;
     }
-
-    // Constructor with only data, next defaults to nullptr
     Node(int data1)
     {
         data = data1;
@@ -25,34 +20,29 @@ public:
     }
 };
 
-// Function to add two numbers represented by linked lists
 Node *addTwoNumbers(Node *l1, Node *l2)
 {
     // Dummy node to simplify list creation
     Node *dummy = new Node(0);
     Node *temp = dummy; // Pointer to traverse and build result list
-    int carry = 0;      // Initialize carry
+    int carry = 0;
 
     // Loop until both lists are done and no carry remains
     while (l1 != NULL || l2 != NULL || carry)
     {
         int sum = 0;
-
-        // Add l1's digit to sum if l1 is not null
         if (l1 != NULL)
         {
             sum += l1->data;
-            l1 = l1->next; // Move to next digit in l1
+            l1 = l1->next;
         }
 
-        // Add l2's digit to sum if l2 is not null
         if (l2 != NULL)
         {
             sum += l2->data;
-            l2 = l2->next; // Move to next digit in l2
+            l2 = l2->next;
         }
 
-        // Add carry from previous operation
         sum += carry;
 
         // Update carry for next digit
