@@ -65,7 +65,7 @@ int main()
     // printing given list
     cout << "Given Linked List:\n";
     printList(head);
-    node *t = getNode(head, 2);
+    node *t = getNode(head, 4);
     // delete node
     deleteNode(t);
     // list after deletion operation
