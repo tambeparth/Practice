@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class Node
 {
 public:
@@ -12,7 +11,6 @@ public:
         next = NULL;
     }
 };
-
 void insertNode(Node *&head, int val)
 {
     Node *newNode = new Node(val);
