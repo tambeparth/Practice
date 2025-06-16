@@ -79,7 +79,7 @@ void printList(Node *head)
 }
 int main()
 {
-    // creation of both lists
+
     Node *head = NULL;
     insertNode(head, 1);
     insertNode(head, 3);
@@ -98,7 +98,6 @@ int main()
     printList(head1);
     cout << "List2: ";
     printList(head2);
-    // checking if intersection is present
     Node *answerNode = intersectionPresent(head1, head2);
     if (answerNode == NULL)
         cout << "No intersection\n";
