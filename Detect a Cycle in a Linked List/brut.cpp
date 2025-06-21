@@ -80,11 +80,8 @@ int main()
     second->next = third;
     third->next = fourth;
     fourth->next = fifth;
-    // Create a loop
     fifth->next = third;
 
-    // Check if there is a loop
-    // n the linked list
     if (detectLoop(head))
     {
         cout << "Loop detected in the linked list." << endl;
