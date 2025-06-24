@@ -9,14 +9,10 @@ using namespace std;
 class Node
 {
 public:
-    // Data stored in the node
     int data;
 
-    // Pointer to the next node in the list
     Node *next;
 
-    // Constructor with both data
-    // and next node as parameters
     Node(int data1, Node *next1)
     {
         data = data1;
