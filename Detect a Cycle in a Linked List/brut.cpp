@@ -4,8 +4,6 @@ using namespace std;
 
 using namespace std;
 
-// Node class represents a
-// node in a linked list
 class Node
 {
 public:
@@ -19,15 +17,13 @@ public:
         next = next1;
     }
 
-    // Constructor with only data as
-    // a parameter, sets next to nullptr
     Node(int data1)
     {
         data = data1;
         next = nullptr;
     }
 };
-// function to detect loop in linked list
+
 bool detectLoop(Node *head)
 {
 
