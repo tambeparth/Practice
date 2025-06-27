@@ -27,25 +27,18 @@ public:
 bool detectLoop(Node *head)
 {
 
-    // Initialize a pointer 'temp'
-    // at the head of the linked list
     Node *temp = head;
 
-    // Create a map to keep track of
-    // encountered nodes
     unordered_map<Node *, int> nodeMap;
 
-    // Step 2: Traverse the linked list
     while (temp != nullptr)
     {
-        // If the node is already in the
-        // map, there is a loop
+
         if (nodeMap.find(temp) != nodeMap.end())
         {
             return true;
         }
-        // Store the current node
-        // in the map
+
         nodeMap[temp] = 1;
 
         // Move to the next node
